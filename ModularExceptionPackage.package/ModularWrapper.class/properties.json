@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "PatrickIndermuehle 3/17/2018 01:15",
+	"super" : "Object",
+	"category" : "ModularExceptionPackage",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"wrappedMethod",
+		"wrappedClass",
+		"selector"
+	],
+	"name" : "ModularWrapper",
+	"type" : "normal"
+}

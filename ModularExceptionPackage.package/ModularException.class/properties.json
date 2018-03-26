@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "PatrickIndermuehle 3/13/2018 20:42",
+	"super" : "Object",
+	"category" : "ModularExceptionPackage",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ModularException",
+	"type" : "normal"
+}

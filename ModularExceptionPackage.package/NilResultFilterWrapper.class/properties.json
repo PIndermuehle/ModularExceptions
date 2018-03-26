@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ModularWrapper",
+	"category" : "ModularExceptionPackage",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "NilResultFilterWrapper",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+MetaLinks
+removeAllMetaLinks
+	MetaLink uninstallAll.

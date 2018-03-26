@@ -1,0 +1,1 @@
+This class provides methods to add exception handling to onther methods an easy, lightweight, modular way.

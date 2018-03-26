@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "PatrickIndermuehle 3/13/2018 20:41",
+	"super" : "Object",
+	"category" : "ModularExceptionPackage",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"bark",
+		"name",
+		"mother",
+		"father",
+		"children"
+	],
+	"name" : "Dog",
+	"type" : "normal"
+}

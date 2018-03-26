@@ -1,0 +1,1 @@
+This modular wrapper is the base class for all other wrappers.

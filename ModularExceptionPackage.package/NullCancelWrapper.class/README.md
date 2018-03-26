@@ -1,0 +1,1 @@
+This wrapper wraps any method that takes an object as a parameter. In the case the parameter is nil it will cancel the execution of the method and return the receiver as result.

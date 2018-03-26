@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "PatrickIndermuehle 3/13/2018 20:44",
+	"super" : "ModularWrapper",
+	"category" : "ModularExceptionPackage",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "NullCancelWrapper",
+	"type" : "normal"
+}
