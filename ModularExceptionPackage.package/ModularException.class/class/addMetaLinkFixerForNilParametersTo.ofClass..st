@@ -1,6 +1,6 @@
 MetaLinks
 addMetaLinkFixerForNilParametersTo: functionHeader ofClass: objectName
-	"Attaches a function before another function"
+	"Adds ametalink fixer for nil parameters to the method. This cancels the method if a parameter is nil"
 	|metaLink|
 	
 	metaLink := MetaLink new

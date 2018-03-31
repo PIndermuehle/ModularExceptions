@@ -1,20 +1,24 @@
 MetaLinks
 addMetaLinkFixerForSentToNilTo: functionHeader ofClass: objectName
-	"Attaches a function before another function"
+	"Attaches a metalink fixer to a method for SentToNil error."
 	|metaLink|
 	
 	metaLink := MetaLink new
 		metaObject: [:object :selector :args :link|
-			|aMethod shouldRun|
-			shouldRun := true.
-			args do:[:each | each isNil ifTrue:[shouldRun := false]].
-			shouldRun ifTrue:[
-				link uninstall.
-				aMethod := (object class lookupSelector: selector).
+			|aMethod|
+		
+			aMethod := (object class lookupSelector: selector).
+			link uninstall.
+			[	
 				object withArgs: args executeMethod: aMethod.
-				(object class>>selector) ast link: link.
-				]
-			];
+				
+			] 
+			on: MessageNotUnderstood do: [:sig | 
+				sig resume.
+			].
+			(object class>>selector) ast link: link.
+				
+		];
 		selector: #value:value:value:value:;
 		arguments:#(object selector arguments link);
 		control: #instead.

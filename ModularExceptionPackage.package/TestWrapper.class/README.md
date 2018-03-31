@@ -1,1 +1,0 @@
-a Text wrapper that just wraps the function.

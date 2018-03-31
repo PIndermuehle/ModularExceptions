@@ -1,5 +1,7 @@
 tests
 testFixDogChildrenThroughWrapper
+
+	"Tests the fix for returning collections with nil elements through a wrapper"
 	|wrapper aDog1| 
 	wrapper := NilResultFilterWrapper installOn: Dog selector:#children.
 	aDog1 := Dog new.

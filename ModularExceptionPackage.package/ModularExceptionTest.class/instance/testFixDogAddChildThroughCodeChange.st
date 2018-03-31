@@ -1,5 +1,7 @@
 tests
 testFixDogAddChildThroughCodeChange
+	"Tests the fix for a nil parameter error through changing the code of the #addChild: message"
+
 	|aDog1 oldMethod|
 	oldMethod := (Dog>>#addChild:) definition .
 	ModularException attachNullCheckForParameter: 'aChild' toFunction: #addChild: ofClass: Dog.

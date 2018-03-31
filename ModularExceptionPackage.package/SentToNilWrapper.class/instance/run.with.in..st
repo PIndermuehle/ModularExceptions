@@ -1,12 +1,11 @@
 evaluation
 run: aSelector with: arguments in: aReceiver
-
-	self inform: 'triggered wrapper'.
-"
-	|shouldCancel|
-	shouldCancel := false.
-	
-	arguments do: [ :each| each isNil ifTrue: [shouldCancel := true] ].
-	shouldCancel ifTrue: [^aReceiver].
-	^aReceiver withArgs: arguments executeMethod: wrappedMethod.
-	"
+	[	
+		^aReceiver withArgs: arguments executeMethod: wrappedMethod.
+	] 
+	on: MessageNotUnderstood do: 
+	[:sig | 
+		sig receiver class = UndefinedObject 
+		ifTrue: 	[sig resume]
+		ifFalse: 	[sig pass.]
+	].

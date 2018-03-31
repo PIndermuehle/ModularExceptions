@@ -1,5 +1,7 @@
 tests
 testUnfixedDogAddChild
+
+	"Tests if the Dog #addChild: still works as expected if left unfixed"
 	|aDog1| 
 	aDog1 := Dog new.
 	self assert: (aDog1 children size = 0).

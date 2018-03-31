@@ -1,6 +1,6 @@
 MetaLinks
 addMetaLinkFixTriggerForFunction: functionHeader ofClass: objectName
-	"Attaches a function before another function"
+	"Attaches a metalink trigger for the receiver #fixIntegrity method to another method."
 	|metaLink|
 	
 	metaLink := MetaLink new

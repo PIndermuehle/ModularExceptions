@@ -1,5 +1,7 @@
 tests
 testFixDogAddChildThroughMetaLinkTrigger
+
+	"Test the fix for a nil parameter error through a #fixIntegrity method triggered through a metalink"
 	|aDog1 meta|
 	meta := ModularException addMetaLinkFixTriggerForFunction: #addChild: ofClass: Dog.
 	aDog1 := Dog new.

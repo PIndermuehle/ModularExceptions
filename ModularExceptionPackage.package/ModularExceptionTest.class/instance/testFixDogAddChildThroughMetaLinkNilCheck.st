@@ -1,5 +1,7 @@
 tests
 testFixDogAddChildThroughMetaLinkNilCheck
+
+	"test the fix for a nil parameter error through a metalink"
 	|aDog1 meta|
 	aDog1 := Dog new.
 	meta := ModularException addMetaLinkFixerForNilParametersTo: #addChild: ofClass: Dog.
