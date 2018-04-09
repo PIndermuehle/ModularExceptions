@@ -1,6 +1,6 @@
 MetaLinks
 addMetaLinkFixerForNilParametersTo: functionHeader ofClass: objectName
-	"Adds ametalink fixer for nil parameters to the method. This cancels the method if a parameter is nil"
+	"Adds a metalink fixer for nil parameters to the method. This cancels the method if a parameter is nil"
 	|metaLink|
 	
 	metaLink := MetaLink new
@@ -18,6 +18,7 @@ addMetaLinkFixerForNilParametersTo: functionHeader ofClass: objectName
 		selector: #value:value:value:value:;
 		arguments:#(object selector arguments link);
 		control: #instead.
+
 
 	(objectName>>functionHeader) ast link: metaLink. 
 	^metaLink 

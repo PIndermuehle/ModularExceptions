@@ -6,12 +6,17 @@ testFixSentToNilThroughMetaLink
 
 " Creates an Error, PrimitiveFailure"
 "
-	meta := ModularException addMetaLinkFixerForSentToNilTo: #makeBark: ofClass: Dog.
+	meta := ModularException addMetaLinkFixerForSentToNilTo: #testBark ofClass: Dog.
+	
 	aDog1 := Dog new.
+	aDog1 bark: 'Bark'.
+	aDog1 father: nil.
+	aDog1 mother: nil.
+	
 	[  
-	aDog1 makeBark: nil.
-	aDog1 makeBark: nil.
-	aDog1 makeBark: nil.
-	] on: Error do: [ meta uninstall. self assert: false].
+		self assert: aDog1 testBark equals: 'Bark'.
+	]  
+	on: Error do: 
+	[:err| meta uninstall. err pass].
 
 	meta uninstall."

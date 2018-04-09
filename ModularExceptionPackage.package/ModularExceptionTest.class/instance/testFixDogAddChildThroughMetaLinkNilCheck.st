@@ -7,12 +7,12 @@ testFixDogAddChildThroughMetaLinkNilCheck
 	meta := ModularException addMetaLinkFixerForNilParametersTo: #addChild: ofClass: Dog.
 	
 	aDog1 addChild: nil.
-	self assert: (aDog1 children size = 0).
+	self assert: aDog1 children size equals: 0.
 	aDog1 addChild: Dog new.
-	self assert: (aDog1 children size = 1).
+	self assert: aDog1 children size equals: 1.
 	aDog1 addChild: nil.
-	self assert: (aDog1 children size = 1).
+	self assert: aDog1 children size equals: 1.
 	aDog1 addChild: Dog new.
-	self assert: (aDog1 children size = 2).
+	self assert: aDog1 children size equals: 2.
 	meta uninstall.
 
