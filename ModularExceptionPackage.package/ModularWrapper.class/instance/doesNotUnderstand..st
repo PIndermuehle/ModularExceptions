@@ -1,5 +1,6 @@
-private
+reflective operations
 doesNotUnderstand: aMessage
-	^wrappedMethod isNil ifTrue: [super doesNotUnderstand: aMessage]
-		ifFalse: [wrappedMethod perform: aMessage selector withArguments: aMessage arguments]
+	^wrappedMethod perform: aMessage selector withArguments: aMessage arguments
+	
+
 	

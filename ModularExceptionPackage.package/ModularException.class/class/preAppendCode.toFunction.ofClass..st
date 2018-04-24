@@ -1,5 +1,8 @@
 CodeManipulation
 preAppendCode: aCode toFunction: aFunction ofClass: aClass
+
+	"Allows inserting code between the function header and the first line of the code"
+	"It also recompiles the method right after"
 	| oldCode header body newCode insertCode|
 	oldCode := (aClass >> aFunction) definition.
 	oldCode := oldCode findTokens: Character cr.

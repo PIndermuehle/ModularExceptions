@@ -1,0 +1,28 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "ModularExceptionPackage",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [
+		"BlueShift",
+		"CachedColormaps",
+		"ColorRegistry",
+		"ComponentMask",
+		"ComponentMax",
+		"GrayToIndexMap",
+		"GreenShift",
+		"HalfComponentMask",
+		"IndexedColors",
+		"MaskingMap",
+		"RedShift"
+	],
+	"instvars" : [
+		"rgb",
+		"cachedDepth",
+		"cachedBitPattern",
+		"alpha"
+	],
+	"name" : "Color2",
+	"type" : "normal"
+}

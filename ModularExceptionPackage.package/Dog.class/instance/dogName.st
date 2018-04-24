@@ -1,3 +1,0 @@
-Naming
-dogName
-	^name.

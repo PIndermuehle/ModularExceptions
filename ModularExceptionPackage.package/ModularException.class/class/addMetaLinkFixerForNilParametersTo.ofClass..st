@@ -14,6 +14,7 @@ addMetaLinkFixerForNilParametersTo: functionHeader ofClass: objectName
 				object withArgs: args executeMethod: aMethod.
 				(object class>>selector) ast link: link.
 				]
+			ifFalse: object.
 			];
 		selector: #value:value:value:value:;
 		arguments:#(object selector arguments link);

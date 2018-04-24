@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "ModularWrapper",
+	"category" : "ModularExceptionPackage",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"returnValue"
+	],
+	"name" : "SkipExceptionWrapper",
+	"type" : "normal"
+}

@@ -1,5 +1,6 @@
 actions
 install
-	[wrappedMethod := wrappedClass lookupSelector: selector.
-	wrappedMethod isKindOf: self class] whileTrue: [wrappedMethod uninstall].
+	wrappedMethod := wrappedClass lookupSelector: selector.
 	wrappedClass addSelector: selector withMethod: self 
+	
+
