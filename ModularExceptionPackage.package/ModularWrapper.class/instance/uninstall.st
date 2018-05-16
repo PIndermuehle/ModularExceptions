@@ -1,6 +1,6 @@
 actions
 uninstall
-	wrappedMethod methodClass methodDictionary
-	at: wrappedMethod selector
-	put: wrappedMethod.
-
+	wrappedMethod notNil ifTrue:
+	[
+		wrappedClass addSelector: selector withMethod: wrappedMethod 
+	].

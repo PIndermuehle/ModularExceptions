@@ -5,5 +5,5 @@ run: aSelector with: arguments in: aReceiver
 	shouldCancel := false.
 	
 	arguments do: [ :each| each isNil ifTrue: [shouldCancel := true] ].
-	shouldCancel ifTrue: [^aReceiver].
+	shouldCancel ifTrue: [^returnValue value].
 	^aReceiver withArgs: arguments executeMethod: wrappedMethod.
